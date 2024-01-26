@@ -1,0 +1,26 @@
+{% extends 'dummy.html' %}
+
+{% block title %} Profile {% endblock %}
+
+
+
+{% block content %}
+
+<center>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{PO.profile_pic.url}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">mr {{UO.username}}</h5>
+          <p class="card-text">your email is : {{UO.email}}</p>
+          <p class="card-text">Address is : {{PO.address}}</p>
+          <a href="#" class="btn btn-primary"> Read more</a>
+        </div>
+      </div>
+
+    
+
+ </center>
+
+{% endblock %}
+
