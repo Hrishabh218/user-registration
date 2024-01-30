@@ -73,9 +73,6 @@ def home(request):
     if request.session.get('username'):
         username=request.session.get('username')
         UO = User.objects.get(username=username)
-
-
-
         d={'UO':UO}
 
         return render(request,'home.html',d)
